@@ -30,6 +30,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+		 <configuration>
+                    <!-- web.xml is not mandatory since JavaEE 5 -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <warName>${artifactId}</warName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
