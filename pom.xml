@@ -6,8 +6,12 @@
     <groupId>com.miracle</groupId>
     <artifactId>MavenProject</artifactId>
     <version>0.1.0</version>
-	<packaging>war</packaging>
-   
+    <packaging>war</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.5.RELEASE</version>
+    </parent>
 
     <dependencies>
         <dependency>
